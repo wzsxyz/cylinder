@@ -1,6 +1,8 @@
 # cylinder
 echarts圆柱图，完美质感，支持label，支持堆叠
 
+demo演示：https://wzsxyz.github.io/cylinder/lib/example.html
+
 export default function(target, settings)
 
 基本使用
@@ -27,7 +29,7 @@ export default function(target, settings)
     });
 
  settings配置：
- 
+
  * theme: array<string/object>, 柱子主题配色，可以是内置主题名，也可以是主题对象。应配置为数组，按系列依次对应
  * barWidth：number，柱状图宽度，0~1
  * barGap：number，柱状图系列间隔 0~1
