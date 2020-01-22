@@ -11,7 +11,7 @@ var src = path.join(assets, 'src');
 var plugins = [
     new HtmlWebpackPlugin({
         inject: true,
-        filename: 'index.html',
+        filename: 'example.html',
         chunks: ['example'],
         template: `${src}/example/index.html`
     })
