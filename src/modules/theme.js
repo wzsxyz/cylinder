@@ -111,18 +111,18 @@ let themeOptions = {
     ),
     arcBorder: ["rgb(22,107,159)", "rgb(52,200,230)"],
   },
-  silver: {
+  green: {
       colors: [
-          "rgb(80,89,86)",
-          "rgb(224,233,230)",
-          "rgb(156,166,158)",
-          "rgb(224,233,230)",
-          "rgb(75,77,55)",
+          "rgb(2,186,75)",
+          "rgb(156,232,158)",
+          "rgb(0,228,86)",
+          "rgb(156,232,158)",
+          "rgb(2,186,75)",
       ].map((item) => item.replace("rgb", "rgba").replace(")", ",1)")),
-      arcColors: ["rgb(156,166,158)", "rgb(224,233,230)"].map((item) =>
+      arcColors: ["rgb(0,228,86)", "rgb(156,252,158)"].map((item) =>
           item.replace("rgb", "rgba").replace(")", ",1)")
       ),
-      arcBorder: ["rgb(156,166,158)", "rgb(156,166,158)"],
+      arcBorder: ["rgb(156,252,158)", "rgb(156,252,158)"],
   },
   yellow: {
     colors: [
@@ -136,6 +136,19 @@ let themeOptions = {
       item.replace("rgb", "rgba").replace(")", ",1)")
     ),
     arcBorder: ["rgb(242,236,37)", "rgb(208,195,64)"],
+  },
+  silver: {
+      colors: [
+          "rgb(80,89,86)",
+          "rgb(224,233,230)",
+          "rgb(156,166,158)",
+          "rgb(224,233,230)",
+          "rgb(75,77,55)",
+      ].map((item) => item.replace("rgb", "rgba").replace(")", ",1)")),
+      arcColors: ["rgb(156,166,158)", "rgb(224,233,230)"].map((item) =>
+          item.replace("rgb", "rgba").replace(")", ",1)")
+      ),
+      arcBorder: ["rgb(156,166,158)", "rgb(156,166,158)"],
   },
   black: {
       colors: [

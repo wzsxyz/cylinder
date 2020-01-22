@@ -345,8 +345,9 @@ function transer(settings, context) {
 export { renderBarItem };
 
 export default function(target, settings) {
-    let { option={}, tooltip, theme, beforeRender, ...chartSettings} = settings;
+    let { option={},title, tooltip, theme, beforeRender, ...chartSettings} = settings;
     option.tooltip = Object.assign(option.tooltip||{}, tooltip||{});
+    option.title = Object.assign(option.title||{}, typeof title=='object'?title:{text: title||''});
     let themes = theme?theme.map(item=>themeDict[item]||item):[];
     if(!themes.length){
         themes = Object.keys(themeDict).map(item=>themeDict[item]);
@@ -358,6 +359,7 @@ export default function(target, settings) {
       return chartOption;
     }
     let optionResult = utils.extend(chartOption, option);
+    console.log(optionResult);
     beforeRender && beforeRender(chartOption, optionResult);
     chart.setOption(optionResult);
     return chart;

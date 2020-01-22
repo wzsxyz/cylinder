@@ -30,7 +30,7 @@ export default function(target, settings)
 
  settings配置：
 
- * theme: array<string/object>, 柱子主题配色，可以是内置主题名，也可以是主题对象。应配置为数组，按系列依次对应
+ * theme: array<string/object>, 柱子主题配色，可以是内置主题名，也可以是主题对象。应配置为数组，按系列依次对应。主题对象包含三个字段: color:柱子颜色，arcColor:顶部底部的椭圆颜色，arcBorder: 顶部底部椭圆边框色
  * barWidth：number，柱状图宽度，0~1
  * barGap：number，柱状图系列间隔 0~1
  * stack：bool，开启堆叠模式
