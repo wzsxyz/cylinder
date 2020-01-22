@@ -5,26 +5,26 @@ export default function(target, settings)
 
 基本使用
 
-  let chart = echarts.init(document.getElementById('chart'));
-  cylinder(chart, {
-      dataSource: {
-        name: [2016,2017,2018],
-        data: [
-            {
-                name: '资产',
-                value: [1,2,3].map(()=>getRn())
-            },
-            {
-                name: '负债',
-                value: [1,2,3].map(()=>getRn())
-            },
-            {
-                name: '收入',
-                value: [1,2,3].map(()=>getRn())
-            }
-        ]
-      }
-  });
+    let chart = echarts.init(document.getElementById('chart'));
+    cylinder(chart, {
+        dataSource: {
+          name: [2016,2017,2018],
+          data: [
+              {
+                  name: '资产',
+                  value: [1,2,3].map(()=>getRn())
+              },
+              {
+                  name: '负债',
+                  value: [1,2,3].map(()=>getRn())
+              },
+              {
+                  name: '收入',
+                  value: [1,2,3].map(()=>getRn())
+              }
+          ]
+        }
+    });
 
  settings配置：
  
